@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Section</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; display: flex; justify-content: center; padding: 50px; background: #ddd; }
+        fieldset { width: 500px; padding: 20px; background: white; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 5px; margin-top: 5px; }
+        textarea { height: 80px; }
+        .btn { background: #003366; color: white; padding: 8px 20px; border: none; border-radius: 20px; margin: 10px 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label>How did you hear about us?</label>
+            <select>
+                <option>Select your option</option>
+                <option>Facebook</option>
+                <option>Google</option>
+                <option>Friend</option>
+            </select>
+            
+            <label>Would you visit again?</label>
+            <input type="radio" name="visit"> Yes 
+            <input type="radio" name="visit"> No 
+            <input type="radio" name="visit"> Maybe
+            
+            <label>Comments:</label>
+            <textarea placeholder="Enter your comments here..."></textarea>
+            
+            <label>Documents:</label>
+            <input type="file">
+            
+            <label><input type="checkbox" checked> Sign me up for email updates</label>
+            
+            <a href="details.html"><button type="button" class="btn">← Back</button></a>
+            <button type="submit" class="btn">Submit →</button>
+        </fieldset>
+    </form>
+</body>
+</html>

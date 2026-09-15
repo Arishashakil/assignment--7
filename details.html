@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+    <style>
+        body { 
+            font-family: 'Times New Roman', serif; 
+            display: flex; 
+            justify-content: center; 
+            padding: 50px; 
+            background: #d3d3d3; 
+        }
+        fieldset { 
+            width: 480px; /* width barhai taake CNIC fit ho jaye */
+            padding: 25px; 
+            background: white; 
+            border: 2px solid #000;
+        }
+        legend { 
+            font-weight: bold; 
+            font-size: 18px; 
+            padding: 0 10px;
+        }
+        label { 
+            display: block; 
+            margin-top: 15px; 
+            font-size: 14px;
+        }
+        input[type="text"], input[type="url"] { 
+            width: 100%; 
+            padding: 6px; 
+            margin-top: 5px; 
+            box-sizing: border-box; /* padding se width kharab nahi hogi */
+            border: 1px solid #999;
+        }
+        .btn-group { 
+            margin-top: 25px; 
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-group img {
+            width: 120px; /* button ki size set */
+            cursor: pointer;
+        }
+        
+        /* CNIC ke liye special CSS */
+        .cnic-box {
+            display: flex;
+            gap: 2px;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .cnic-box input {
+            width: 20px; /* box chota kiya */
+            height: 22px;
+            text-align: center;
+            padding: 0;
+            border: 1px solid #999;
+        }
+        .dash { 
+            font-weight: bold; 
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter First Name" required>
+            
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter Last Name" required>
+            
+            <label>CNIC:</label>
+            <div class="cnic-box">
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <span class="dash">-</span>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <input type="text" maxlength="1" required>
+                <span class="dash">-</span>
+                <input type="text" maxlength="1" required>
+            </div>
+            
+            <label>Social Link:</label>
+            <input type="url" placeholder="Enter Facebook/Linkedin profile link">
+            
+            <div class="btn-group">
+                <a href="accounts.html"><img src="images/back.png" alt="Back"></a>
+                <a href="review.html"><img src="images/next.png" alt="Next"></a>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
